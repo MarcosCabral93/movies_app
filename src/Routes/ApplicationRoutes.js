@@ -1,11 +1,16 @@
-import { Route, Routes } from "react-router-dom";
+import {createBrowserRouter } from "react-router-dom";
 import { Home } from "../Views/Home";
+import { MovieDetail } from "../Views/MovieDetail";
 
+const router = createBrowserRouter([
+    {
+    path: '/',
+    element: <Home />,
+    },
+    {
+    path: '/movie/:id',
+    element: <MovieDetail />,
+    },
+    ]);
 
-export const ApplicationRoutes = () => (
-<>
-<Routes>
-<Route exact path="/" element={<Home />}/>
-</Routes>
-</>
-);
+    export default router
