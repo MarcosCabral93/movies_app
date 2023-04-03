@@ -1,20 +1,24 @@
-export const Header = () => {
-    return (    <header>
-  
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+import { Link } from "react-router-dom"
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+export const Header = () => {
+    return (  
+          <header>
+  
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="container-fluid">
+
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link className="nav-link active"  to={"/"}>Home</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Most popular</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Most popular</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Heroes</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Heroes</a>
                         </li>
+           
                     </ul>
                 </div>
             </div>

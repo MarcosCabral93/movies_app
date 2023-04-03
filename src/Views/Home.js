@@ -18,10 +18,6 @@ export const Home = () => {
    useEffect(() => {
       getMovies();
    }, []);
-
-
-
-
    return (
 
       <div className="container">
@@ -30,7 +26,7 @@ export const Home = () => {
          </h1>
          <br>
          </br>
-         <div className="row gy-4 ">
+         <div className="row gy-4">
             {
                movies.map((movie) => {
                   return (
@@ -41,5 +37,6 @@ export const Home = () => {
          </div>
 
       </div>
+      
    )
 }
